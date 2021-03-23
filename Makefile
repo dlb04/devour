@@ -10,10 +10,9 @@ LDLIBS = -s -lX11
 BIN_DIR = /usr/bin
 
 SRC = devour.c
-OBJ = devour.o
 
 all: $(NAME)
-$(NAME): $(OBJ)
+$(NAME): $(SRC)
 	$(CC) $(CFLAGS) -o $@ $^ $(LDLIBS)
 
 install: all

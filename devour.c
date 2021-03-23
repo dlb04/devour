@@ -31,7 +31,8 @@ usage(void){
 	printf("Usage: \n\t%s COMMAND [OPTIONS]\n"
 		"\t%s - Displays this help\n",
 		prognam, prognam
-		); exit(0);
+		);
+	exit(0);
 }
 
 int 
